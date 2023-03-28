@@ -1,30 +1,59 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="UTF-8">
-	<title>Control de entrada de invitados</title>
-</head>
-<body>
-	<h1>Control de entrada de invitados</h1>
-	<div id="qr-reader"></div>
-	<div id="info"></div>
-	<script src="https://rawgit.com/mebjas/html5-qrcode/master/html5-qrcode.min.js"></script>
-	<script>
-		// Crea un lector de cÛdigos QR
-		var reader = new Html5Qrcode('qr-reader');
-
-		// Escanea un cÛdigo QR y muestra la informaciÛn del invitado
-		reader.start({ facingMode: "environment" }, function (code) {
-			fetch(`/invitados/${code}`)
-				.then(response => response.json())
-				.then(data => {
-					document.getElementById('info').innerHTML = `Bienvenido, ${data.nombre}`;
-				})
-				.catch(error => {
-					document.getElementById('info').innerHTML = 'CÛdigo QR no v·lido.';
-				})
-				.finally(() => {
-					reader.stop();
-				});
-		}, function (error) {
-		
+  <head>
+    <meta charset="UTF-8">
+    <title>Control de entrada</title>
+    <style>
+      /* Estilos para la p√°gina */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+      }
+      
+      h1 {
+        text-align: center;
+        margin-top: 50px;
+      }
+      
+      form {
+        width: 300px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+      
+      input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: none;
+        border-radius: 3px;
+        box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.3);
+      }
+      
+      input[type="submit"] {
+        width: 100%;
+        background-color: #4CAF50;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+      }
+      
+      input[type="submit"]:hover {
+        background-color: #3e8e41;
+      }
+      
+      .mensaje {
+        text-align: center;
+        margin-top: 20px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Control de entrada
