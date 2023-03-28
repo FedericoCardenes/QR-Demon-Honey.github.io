@@ -1,59 +1,22 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
+<head>
     <title>Control de entrada</title>
-    <style>
-      /* Estilos para la página */
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #f2f2f2;
-      }
-      
-      h1 {
-        text-align: center;
-        margin-top: 50px;
-      }
-      
-      form {
-        width: 300px;
-        margin: 0 auto;
-        background-color: #fff;
-        padding: 20px;
-        border-radius: 5px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-      }
-      
-      input[type="text"] {
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 20px;
-        border: none;
-        border-radius: 3px;
-        box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.3);
-      }
-      
-      input[type="submit"] {
-        width: 100%;
-        background-color: #4CAF50;
-        color: #fff;
-        padding: 10px;
-        border: none;
-        border-radius: 3px;
-        cursor: pointer;
-        transition: background-color 0.3s ease-in-out;
-      }
-      
-      input[type="submit"]:hover {
-        background-color: #3e8e41;
-      }
-      
-      .mensaje {
-        text-align: center;
-        margin-top: 20px;
-        font-weight: bold;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>Control de entrada
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1>Control de entrada</h1>
+    <form>
+        <label for="guest_name">Nombre del invitado:</label>
+        <input type="text" id="guest_name" name="guest_name" required><br><br>
+        <label for="guest_status">Estatus de aprobación:</label>
+        <select id="guest_status" name="guest_status" required>
+            <option value="aprobado">Aprobado</option>
+            <option value="pendiente">Pendiente</option>
+            <option value="rechazado">Rechazado</option>
+        </select><br><br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
