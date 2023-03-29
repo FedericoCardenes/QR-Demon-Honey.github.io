@@ -1,84 +1,87 @@
 <!DOCTYPE html>
-<html style="height: 100%;">
+<html>
 <head>
 	<title>Demon Honey Evento</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style>
-		html {
-			height: 100%;
-		}
-
 		body {
 			background-color: #F8F8F8;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 16px;
+			line-height: 1.6;
 			margin: 0;
 			padding: 0;
-			min-height: 100%;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-		}
-
-		.container {
-			max-width: 500px;
-			margin: 0 auto;
-			padding: 20px;
-			border: 1px solid #E6E6E6;
-			background-color: #FFFFFF;
-			box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-			border-radius: 5px;
-			text-align: center;
-		}
-
-		h1 {
-			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-			font-style: italic;
-			font-size: 2.5em;
-			color: #FF69B4;
-			margin-top: 0;
-			margin-bottom: 20px;
-		}
-
-		p {
-			font-family: 'Roboto', Arial, Helvetica, sans-serif;
-			font-size: 1.5em;
 			color: #333;
-			margin-top: 10px;
-			margin-bottom: 10px;
 		}
+	.container {
+		max-width: 1100px;
+		margin: 0 auto;
+		padding: 30px;
+	}
 
-		.aprobado {
-			font-family: 'Montserrat', sans-serif;
-			font-size: 1.2em;
-			color: #00FF00;
-			margin-top: 20px;
-			margin-bottom: 10px;
-			border: 2px solid #00FF00;
-			padding: 10px;
-			border-radius: 5px;
-			display: inline-block;
-		}
+	h1 {
+		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		font-style: italic;
+		font-size: 3em;
+		color: #FF69B4;
+		margin-top: 0;
+		margin-bottom: 30px;
+		text-align: center;
+		text-transform: uppercase;
+	}
 
-		.location {
-			font-family: 'Open Sans', sans-serif;
-			font-size: 1.0em;
-			color: #333;
-			margin-top: 10px;
-			margin-bottom: 20px;
-			border: 2px solid #FF69B4;
-			padding: 10px;
-			border-radius: 5px;
-			display: inline-block;
-		}
-	</style>
+	p {
+		font-size: 1.2em;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		line-height: 1.4;
+	}
+
+	.aprobado {
+		font-family: 'Montserrat', sans-serif;
+		font-size: 1.2em;
+		color: #FFF;
+		margin-top: 40px;
+		margin-bottom: 20px;
+		padding: 10px 20px;
+		border-radius: 50px;
+		display: inline-block;
+		background-color: #3E8EDE;
+		box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		cursor: pointer;
+		transition: background-color 0.3s ease;
+	}
+
+	.aprobado:hover {
+		background-color: #2763B3;
+	}
+
+	.location {
+		font-size: 1.2em;
+		color: #333;
+		margin-top: 30px;
+		margin-bottom: 30px;
+		padding: 20px;
+		border-radius: 5px;
+		display: inline-block;
+		background-color: #EFEFEF;
+		box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+	}
+</style>
 </head>
 <body>
 	<div class="container">
 		<h1>Demon Honey Evento</h1>
 		<p>
-			<!-- Reemplaza la URL del archivo de Google Sheets con la URL real de tu archivo -->
-			Nombre de invitado: <strong><a href="https://docs.google.com/spreadsheets/d/1RM4vAkt48pV_iFcX-iiXbKVzwCXwkZnnAU88FZRr3N8/edit?usp=sharing">Federico</a></strong>
+			¡Bienvenido al evento Demon Honey! Estamos muy emocionados de tenerte con nosotros. Por favor, muestra el siguiente código QR en la entrada del evento para registrarte y obtener acceso al recinto:
 		</p>
-		<div class="aprobado">Aprobado</div>
+		<img src="https://via.placeholder.com/350x150" alt="Código QR del evento">
+		<p>
+			También puedes encontrar toda la información del evento, incluyendo detalles de la ubicación, en la aplicación Demon Honey. ¡Descárgala ahora y prepárate para un día lleno de diversión!
+		</p>
+		<div class="aprobado">Registrarse ahora</div>
 		<div class="location">Palermo, Buenos Aires</div>
 	</div>
 </body>
