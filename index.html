@@ -1,22 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Control de entrada</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Demon Honey Evento</title>
+	<style>
+		h1 {
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			font-style: italic;
+			font-size: 2.5em;
+			text-align: center;
+			color: #FF69B4;
+			margin-top: 20px;
+		}
+
+		p {
+			font-family: 'Roboto', Arial, Helvetica, sans-serif;
+			font-size: 1.5em;
+			text-align: center;
+			color: #333;
+			margin-top: 10px;
+		}
+
+		.aprobado {
+			font-family: 'Montserrat', sans-serif;
+			font-size: 1.2em;
+			text-align: center;
+			color: #00FF00;
+			margin-top: 20px;
+		}
+
+		.location {
+			font-family: 'Open Sans', sans-serif;
+			font-size: 1.2em;
+			text-align: center;
+			color: #333;
+			margin-top: 10px;
+		}
+	</style>
 </head>
 <body>
-    <h1>Control de entrada</h1>
-    <form>
-        <label for="guest_name">Nombre del invitado:</label>
-        <input type="text" id="guest_name" name="guest_name" required><br><br>
-        <label for="guest_status">Estatus de aprobación:</label>
-        <select id="guest_status" name="guest_status" required>
-            <option value="aprobado">Aprobado</option>
-            <option value="pendiente">Pendiente</option>
-            <option value="rechazado">Rechazado</option>
-        </select><br><br>
-        <input type="submit" value="Enviar">
-    </form>
+	<h1>Demon Honey Evento</h1>
+	<p>
+		<!-- Reemplaza la URL del archivo de Google Sheets con la URL real de tu archivo -->
+		Nombre de invitado: <strong><a href="https://docs.google.com/spreadsheets/d/1RM4vAkt48pV_iFcX-iiXbKVzwCXwkZnnAU88FZRr3N8/edit?usp=sharing">Nombre del Invitado</a></strong>
+	</p>
+	<div class="aprobado">Aprobado</div>
+	<div class="location">Palermo, Buenos Aires</div>
 </body>
 </html>
