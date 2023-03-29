@@ -1,87 +1,102 @@
 <!DOCTYPE html>
-<html>
+<html style="height: 100%;">
 <head>
 	<title>Demon Honey Evento</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style>
+		html {
+			height: 100%;
+		}
+
 		body {
-			background-color: #F8F8F8;
-			font-family: Arial, Helvetica, sans-serif;
-			font-size: 16px;
-			line-height: 1.6;
+			background-color: #f5f5f5;
 			margin: 0;
 			padding: 0;
-			color: #333;
+			min-height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
 		}
-	.container {
-		max-width: 1100px;
-		margin: 0 auto;
-		padding: 30px;
-	}
 
-	h1 {
-		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-		font-style: italic;
-		font-size: 3em;
-		color: #FF69B4;
-		margin-top: 0;
-		margin-bottom: 30px;
-		text-align: center;
-		text-transform: uppercase;
-	}
+		.container {
+			max-width: 600px;
+			margin: 0 auto;
+			padding: 40px;
+			border: 1px solid #e6e6e6;
+			background-color: #ffffff;
+			box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+			border-radius: 8px;
+			text-align: center;
+			font-family: 'Montserrat', sans-serif;
+		}
 
-	p {
-		font-size: 1.2em;
-		margin-top: 20px;
-		margin-bottom: 20px;
-		line-height: 1.4;
-	}
+		h1 {
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 600;
+			font-size: 3em;
+			color: #252525;
+			margin-top: 0;
+			margin-bottom: 20px;
+			text-transform: uppercase;
+		}
 
-	.aprobado {
-		font-family: 'Montserrat', sans-serif;
-		font-size: 1.2em;
-		color: #FFF;
-		margin-top: 40px;
-		margin-bottom: 20px;
-		padding: 10px 20px;
-		border-radius: 50px;
-		display: inline-block;
-		background-color: #3E8EDE;
-		box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
-		text-transform: uppercase;
-		letter-spacing: 2px;
-		cursor: pointer;
-		transition: background-color 0.3s ease;
-	}
+		p {
+			font-size: 1.3em;
+			color: #333;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			line-height: 1.5;
+			font-weight: 400;
+			text-align: left;
+			font-family: 'Roboto', sans-serif;
+		}
 
-	.aprobado:hover {
-		background-color: #2763B3;
-	}
+		.aprobado {
+			font-family: 'Montserrat', sans-serif;
+			font-size: 1.5em;
+			color: #ffffff;
+			margin-top: 40px;
+			margin-bottom: 20px;
+			border: none;
+			padding: 20px;
+			border-radius: 8px;
+			display: inline-block;
+			background-color: #008cff;
+			box-shadow: 0px 5px 10px rgba(0, 140, 255, 0.2);
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			font-weight: 600;
+		}
 
-	.location {
-		font-size: 1.2em;
-		color: #333;
-		margin-top: 30px;
-		margin-bottom: 30px;
-		padding: 20px;
-		border-radius: 5px;
-		display: inline-block;
-		background-color: #EFEFEF;
-		box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
-	}
-</style>
+		.location {
+			font-family: 'Open Sans', sans-serif;
+			font-size: 1.2em;
+			color: #333;
+			margin-top: 20px;
+			margin-bottom: 40px;
+			border: 2px solid #e6e6e6;
+			padding: 20px;
+			border-radius: 8px;
+			display: inline-block;
+			font-weight: 400;
+			text-align: left;
+			line-height: 1.5;
+		}
+
+		a {
+			text-decoration: none;
+			color: #008cff;
+		}
+	</style>
 </head>
 <body>
 	<div class="container">
 		<h1>Demon Honey Evento</h1>
 		<p>
-			¡Bienvenido al evento Demon Honey! Estamos muy emocionados de tenerte con nosotros. Por favor, muestra el siguiente código QR en la entrada del evento para registrarte y obtener acceso al recinto:
+			<!-- Reemplaza la URL del archivo de Google Sheets con la URL real de tu archivo -->
+			Nombre de invitado: <strong><a href="https://docs.google.com/spreadsheets/d/1ABC12345/edit#gid=0">Nombre del Invitado</a></strong>
 		</p>
-		<img src="https://via.placeholder.com/350x150" alt="Código QR del evento">
-		<p>
-			También puedes encontrar toda la información del evento, incluyendo detalles de la ubicación, en la aplicación Demon Honey. ¡Descárgala ahora y prepárate para un día lleno de diversión!
-		</p>
-		<div class="aprobado">Registrarse ahora</div>
+		<div class="aprobado">Aprobado</div>
 		<div class="location">Palermo, Buenos Aires</div>
 	</div>
 </body>
